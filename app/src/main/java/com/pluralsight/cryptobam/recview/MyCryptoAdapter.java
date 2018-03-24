@@ -31,7 +31,7 @@ public class MyCryptoAdapter extends RecyclerView.Adapter<MyCryptoAdapter.CoinVi
         final CoinModel model = mItems.get(position);
         holder.tvNameAndSymbol.setText(String.format(STR_TEMPLATE_NAME, model.name, model.symbol));
         holder.tvPriceAndVolume.setText(String.format(STR_TEMPLATE_PRICE, model.priceUsd, model.volume24H));
-        Glide.with(holder.ivIcon).load(model.imageUrl).into(holder.ivIcon);
+//        Glide.with(holder.ivIcon).load(model.imageUrl).into(holder.ivIcon); // TODO: how to get images?
     }
 
     @Override
